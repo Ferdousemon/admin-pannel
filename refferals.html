@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/sass.css">
+    <link rel="stylesheet" href="assets/css/layout.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+</head>
+<body>
+    <div class="main-wrapper">
+        <!-- -----navbar----- -->
+        <div class="header-container fixed-top">
+            <header class="header navbar navber-expand-sm expand-header">
+                <div class="header-left d-flex">
+                    <div class="logo">
+                        <a href="#" class="text-white">1xpepe</a>
+                    </div>
+                    <a href="#" class="sidebarcollapse" id="toggleSidebar" data-placement="bottom">
+                        <span class="fa-solid fa-bars"> </span>
+                    </a>
+                </div>
+                <ul class="navbar-itme flex-row ml-auto">
+                    <li class="nav-item  dropdown user-profile-dropdown">
+                        <a href="" class="navlink user" id="notify" data-bs-toggle="dropdown">
+                            <img src="assets/img/bell-icon.svg" alt="" class="icon">
+                            <p class="count">5</p>
+                        </a>
+                        <div class="dropdown-menu">
+                            <div class="dp-main-menu">
+                                <a href="" class="dropdown-item message-item">
+                                    <img src="assets/img/server.svg" alt="" class="user-note">
+                                    <div class="note-info-desmis">
+                                        <div class="user-notify-info">
+                                            <p class="note-name">Server Rebooted</p>
+                                            <p class="note-time">20min</p>
+                                        </div>
+                                        <p class="status-link"><span class="fas fa-times"></span></p>
+                                    </div>
+                                </a>
+                                <a href="" class="dropdown-item message-item">
+                                    <img src="assets/img/server.svg" alt="" class="user-note">
+                                    <div class="note-info-desmis">
+                                        <div class="user-notify-info">
+                                            <p class="note-name">Server Rebooted</p>
+                                            <p class="note-time">20min</p>
+                                        </div>
+                                        <p class="status-link"><span class="fas fa-times"></span></p>
+                                    </div>
+                                </a>
+                                <a href="" class="dropdown-item message-item">
+                                    <img src="assets/img/server.svg" alt="" class="user-note">
+                                    <div class="note-info-desmis">
+                                        <div class="user-notify-info">
+                                            <p class="note-name">Server Rebooted</p>
+                                            <p class="note-time">20min</p>
+                                        </div>
+                                        <p class="status-link"><span class="fas fa-times"></span></p>
+                                    </div>
+                                </a>
+                                <a href="" class="dropdown-item message-item">
+                                    <img src="assets/img/server.svg" alt="" class="user-note">
+                                    <div class="note-info-desmis">
+                                        <div class="user-notify-info">
+                                            <p class="note-name">Server Rebooted</p>
+                                            <p class="note-time">20min</p>
+                                        </div>
+                                        <p class="status-link"><span class="fas fa-times"></span></p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item  dropdown user-profile-dropdown">
+                        <a href="" class="navlink user" id="notify" data-bs-toggle="dropdown">
+                            <img src="assets/img/telegram.svg" alt="" class="icon">
+                        </a>
+                    </li>
+                    <li class="nav-item  dropdown user-profile-dropdown">
+                        <a href="" class="navlink user" id="notify" data-bs-toggle="dropdown">
+                            <img src="assets/img/user.svg" alt="" class="icon">
+                            
+                        </a>
+                        <div class="dropdown-menu">
+                            <div class="dp-main-menu">
+                                <a href="" class="dropdown-item message-item">
+                                    <img src="assets/img/user-profile.svg" alt="" class="user-note">
+                                    <div class="note-info-desmis">
+                                        <div class="user-notify-info">
+                                            <p class="note-name">My Profile</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="" class="dropdown-item message-item">
+                                    <img src="assets/img/dollar-symbol.svg" alt="" class="user-note">
+                                    <div class="note-info-desmis">
+                                        <div class="user-notify-info">
+                                            <p class="note-name">Balance:<span>4.00</span></p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="" class="dropdown-item message-item">
+                                    <img src="assets/img/logout.svg" alt="" class="user-note">
+                                    <div class="note-info-desmis">
+                                        <div class="user-notify-info">
+                                            <p class="note-name">Logout</p>
+                                        </div>
+                                    </div>
+                                </a>
+
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item  dropdown user-profile-dropdown">
+                        <a href="" class="navlink user" id="notify" data-bs-toggle="dropdown">
+                            <img src="assets/img/settings.svg" alt="" class="icon">
+                            
+                        </a>
+                    </li>
+
+                </ul>
+            </header>
+            
+        </div>
+        <!-- ============== navbar end ================ -->
+        <!-- sidebar-start  -->
+        <div class="left-menu hide">
+            <nav class="animated bouncInDown">
+                <ul id="sidebar">
+                    <li class="active">
+                        <a href="index.html" class=""><i class="fa-solid fa-house-user"></i>Dashboard</a>
+                    </li>
+                    <li>
+                        <a href="#" class=""><i class="fa-solid fa-people-group"></i>Referrals</a>
+                    </li>
+                    <li>
+                        <a href="refferals-contest.html" class=""><i class="fa-solid fa-trophy"></i>Referrals Contest</a>
+                    </li>
+                    <li>
+                        <a href="shortlink-contest.html class=""><i class="fa-solid fa-star"></i>Shortlink Contest</a>
+                    </li>
+                    <li>
+                        <a href="withdraw.html" class=""><i class="fa-solid fa-wallet"></i>Wallet</a>
+                    </li>
+                    <li>
+                        <a href="deposit.html" class=""><i class="fa-solid fa-download"></i>Deposit</a>
+                    </li>
+                    <li>
+                        <a href="coupon.html" class=""><i class="fa-solid fa-ticket"></i>Daily coupon</a>
+                    </li>
+                    <li>
+                        <a href="article.html" class=""><i class="fa-solid fa-newspaper"></i>Article Ads</a>
+                    </li>
+                    <li>
+                        <a href="#" class=""><i class="fa-brands fa-buffer"></i>Offers & Surveys</a>
+                    </li>
+                    <li>
+                        <a href="#" class=""><i class="fa-solid fa-question"></i>quiz</a>
+                    </li>
+                    <li>
+                        <a href="#" class=""><i class="fa-solid fa-business-time"></i>Facuet</a>
+                    </li>
+                    <li>
+                        <a href="#" class=""><i class="fa-solid fa-hourglass-end"></i>Unlimited-Faucet</a>
+                    </li>
+                    <li>
+                        <a href="#" class=""><i class="fa-solid fa-link"></i>Shortlink Wall</a>
+                    </li>
+                    <li>
+                        <a href="#" class=""><i class="fa-brands fa-adn"></i>Iframe Ads</a>
+                    </li>
+                    <li>
+                        <a href="#" class=""><i class="fa-brands fa-adn"></i>Window Ads</a>
+                    </li>
+                    <li>
+                        <a href="#" class=""><i class="fa-solid fa-wand-magic-sparkles"></i>Challengs</a>
+                    </li>
+                    <li>
+                        <a href="#" class=""><i class="fa-solid fa-clock"></i>N-Faucet</a>
+                    </li>
+                    <li>
+                        <a href="#" class=""><i class="fa-solid fa-bolt"></i>Volts Mining</a>
+                    </li>
+                    <li class="sub-menu">
+                        <a href="#" class=""><i class="fa-brands fa-pix"></i>Buy Ads
+                           <div class="fa fa-caret-down right"></div>
+                        </a>
+                        <ul class="left-menu-dp">
+                            <li><a href=""><i class="fa-solid fa-plus"></i>Creat Ads</a></li>
+                            <li><a href=""><i class="fa-solid fa-bars-progress"></i>Manage Ads</a></li>
+                            <li><a href=""><i class="fa-solid fa-shuffle"></i>Transfer</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class=""><i class="fa-solid fa-layer-group"></i>Change Password</a>
+                    </li>
+                    <li>
+                        <a href="#" class=""><i class="fa-solid fa-clock-rotate-left"></i>Account Histroy</a>
+                    </li>
+                    <li>
+                        <a href="#" class=""><i class="fa-solid fa-clock-rotate-left"></i>Logout</a>
+                    </li>
+                    <li>
+                        <a href="#" class=""><i class="fa-solid fa-clock-rotate-left"></i>Logout</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+
+
+        <!-- sidebar-start end -->
+
+        <!-- --------------main-content------------- -->
+        <div class="content-wrapper hide">
+            <section class="deshboard-top-sec">
+                <div class="container-fluid">
+                    <div class="mx-3">
+                    <div class="row px-3">
+                        <div class="col-md-6 col-lg-6 col-12">
+                            <div class="commision-card">
+                                <div class="commision-dp">
+                                    <div class="refferals-card">
+                                        <div>
+                                            <h4>Referrals</h4>
+                                            <p>0</p>
+                                        </div>
+                                        <div>
+                                            <i class="fa-solid fa-people-group"></i>
+                                        </div>
+                                    </div>
+                                    <div class="commision-count d-flex">
+                                        <div>
+                                          <h4>Commision</h4>
+                                          <p>100%</p>
+                                        </div>
+                                        <div class="ms-5">
+                                            <i class="fa-solid fa-percent"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="reffer-link col-12">
+                                    <h5>Refferlink</h5>
+                                    <div class="refferlink-wrap">
+                                        <input type="text" name="" id="" value="https://1xpepe.com">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row px-3">
+                        <div class="col-12 col-sm ">
+                            <div class="features-card">
+                                <div class="text-center">
+                                    <h4>Referral Contest Statistics</h4>
+                                    
+                                </div>
+                                <div class="table-responsive">
+                                    <table class="table text-center">
+                                        <thead>
+                                          <tr>
+                                            <th scope="col">#</th>
+                                            <th scope="col">Level</th>
+                                            <th scope="col">Commision</th>
+                                            <th scope="col">Total Refferral</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr>
+                                            <th scope="row">1</th>
+                                            <td>Tier1</td>
+                                            <td>15%</td>
+                                            <td>0</td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">2</th>
+                                            <td>Tier2</td>
+                                            <td>1%</td>
+                                            <td>0</td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">3</th>
+                                            <td>Tier3</td>
+                                            <td>1%</td>
+                                            <td>0</td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row px-3">
+                        <div class="col-12">
+                            <div class="welcome-card">
+                                <h4>Instructions</h4>
+                                <p>The 1xpepe Referral (Affiliate) Program Consists Of More Than 1 Level. What Does This Mean?</p>
+                                <br>
+                                <p>If A Person Uses Your Referral Link To Register, He Becomes Your Referral, And You Will Receive 15% Of Every Earnings He Makes. This Is A First-Level Or Tier 1 Referral.
+
+                                </p>
+                                <br>
+                                <p>If This Same Person Invites Someone Else To The Service Using His Own Referral Link, Then He Gets A First-Level Referral As Well. But The Person He Invites Becomes Your Second-Level Referral And You Will Receive 1% Comission From This Person’s Earnings. In Other Words, A Second-Level Referral Is A User Invited By A Person Whom You Invited To The Service.
+
+                                </p>
+                                <br>
+                                <p>Similarly, If Your Second-Level Referral Invites With His Own Referral Link A New User To The Service, Then This User Becomes Your Third-Level Referral. You Will Receive A 1% Comission From This Person’s Earnings.</p>
+                            </div>
+                        </div>
+                    </div>
+                   </div>
+                </div>
+
+            </section>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

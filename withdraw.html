@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/sass.css">
+    <link rel="stylesheet" href="assets/css/layout.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+</head>
+<body>
+    <div class="main-wrapper">
+        <!-- -----navbar----- -->
+        <div class="header-container fixed-top">
+            <header class="header navbar navber-expand-sm expand-header">
+                <div class="header-left d-flex">
+                    <div class="logo">
+                        <a href="#" class="text-white">1xpepe</a>
+                    </div>
+                    <a href="#" class="sidebarcollapse" id="toggleSidebar" data-placement="bottom">
+                        <span class="fa-solid fa-bars"> </span>
+                    </a>
+                </div>
+                <ul class="navbar-itme flex-row ml-auto">
+                    <li class="nav-item  dropdown user-profile-dropdown">
+                        <a href="" class="navlink user" id="notify" data-bs-toggle="dropdown">
+                            <img src="assets/img/bell-icon.svg" alt="" class="icon">
+                            <p class="count">5</p>
+                        </a>
+                        <div class="dropdown-menu">
+                            <div class="dp-main-menu">
+                                <a href="" class="dropdown-item message-item">
+                                    <img src="assets/img/server.svg" alt="" class="user-note">
+                                    <div class="note-info-desmis">
+                                        <div class="user-notify-info">
+                                            <p class="note-name">Server Rebooted</p>
+                                            <p class="note-time">20min</p>
+                                        </div>
+                                        <p class="status-link"><span class="fas fa-times"></span></p>
+                                    </div>
+                                </a>
+                                <a href="" class="dropdown-item message-item">
+                                    <img src="assets/img/server.svg" alt="" class="user-note">
+                                    <div class="note-info-desmis">
+                                        <div class="user-notify-info">
+                                            <p class="note-name">Server Rebooted</p>
+                                            <p class="note-time">20min</p>
+                                        </div>
+                                        <p class="status-link"><span class="fas fa-times"></span></p>
+                                    </div>
+                                </a>
+                                <a href="" class="dropdown-item message-item">
+                                    <img src="assets/img/server.svg" alt="" class="user-note">
+                                    <div class="note-info-desmis">
+                                        <div class="user-notify-info">
+                                            <p class="note-name">Server Rebooted</p>
+                                            <p class="note-time">20min</p>
+                                        </div>
+                                        <p class="status-link"><span class="fas fa-times"></span></p>
+                                    </div>
+                                </a>
+                                <a href="" class="dropdown-item message-item">
+                                    <img src="assets/img/server.svg" alt="" class="user-note">
+                                    <div class="note-info-desmis">
+                                        <div class="user-notify-info">
+                                            <p class="note-name">Server Rebooted</p>
+                                            <p class="note-time">20min</p>
+                                        </div>
+                                        <p class="status-link"><span class="fas fa-times"></span></p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item  dropdown user-profile-dropdown">
+                        <a href="" class="navlink user" id="notify" data-bs-toggle="dropdown">
+                            <img src="assets/img/telegram.svg" alt="" class="icon">
+                        </a>
+                    </li>
+                    <li class="nav-item  dropdown user-profile-dropdown">
+                        <a href="" class="navlink user" id="notify" data-bs-toggle="dropdown">
+                            <img src="assets/img/user.svg" alt="" class="icon">
+                            
+                        </a>
+                        <div class="dropdown-menu">
+                            <div class="dp-main-menu">
+                                <a href="" class="dropdown-item message-item">
+                                    <img src="assets/img/user-profile.svg" alt="" class="user-note">
+                                    <div class="note-info-desmis">
+                                        <div class="user-notify-info">
+                                            <p class="note-name">My Profile</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="" class="dropdown-item message-item">
+                                    <img src="assets/img/dollar-symbol.svg" alt="" class="user-note">
+                                    <div class="note-info-desmis">
+                                        <div class="user-notify-info">
+                                            <p class="note-name">Balance:<span>4.00</span></p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="" class="dropdown-item message-item">
+                                    <img src="assets/img/logout.svg" alt="" class="user-note">
+                                    <div class="note-info-desmis">
+                                        <div class="user-notify-info">
+                                            <p class="note-name">Logout</p>
+                                        </div>
+                                    </div>
+                                </a>
+
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item  dropdown user-profile-dropdown">
+                        <a href="" class="navlink user" id="notify" data-bs-toggle="dropdown">
+                            <img src="assets/img/settings.svg" alt="" class="icon">
+                            
+                        </a>
+                    </li>
+
+                </ul>
+            </header>
+            
+        </div>
+        <!-- ============== navbar end ================ -->
+        <!-- sidebar-start  -->
+        <div class="left-menu hide">
+            <nav class="animated bouncInDown">
+                <ul id="sidebar">
+                    <li class="active">
+                        <a href="index.html" class=""><i class="fa-solid fa-house-user"></i>Dashboard</a>
+                    </li>
+                    <li>
+                        <a href="refferals.html" class=""><i class="fa-solid fa-people-group"></i>Referrals</a>
+                    </li>
+                    <li>
+                        <a href="refferals-contest.html" class=""><i class="fa-solid fa-trophy"></i>Referrals Contest</a>
+                    </li>
+                    <li>
+                        <a href="shortlink-contest.html" class=""><i class="fa-solid fa-star"></i>Shortlink Contest</a>
+                    </li>
+                    <li>
+                        <a href="withdraw.html" class=""><i class="fa-solid fa-wallet"></i>Wallet</a>
+                    </li>
+                    <li>
+                        <a href="deposit.html" class=""><i class="fa-solid fa-download"></i>Deposit</a>
+                    </li>
+                    <li>
+                        <a href="coupon.html" class=""><i class="fa-solid fa-ticket"></i>Daily coupon</a>
+                    </li>
+                    <li>
+                        <a href="article.html" class=""><i class="fa-solid fa-newspaper"></i>Article Ads</a>
+                    </li>
+                    <li>
+                        <a href="#" class=""><i class="fa-brands fa-buffer"></i>Offers & Surveys</a>
+                    </li>
+                    <li>
+                        <a href="#" class=""><i class="fa-solid fa-question"></i>quiz</a>
+                    </li>
+                    <li>
+                        <a href="#" class=""><i class="fa-solid fa-business-time"></i>Facuet</a>
+                    </li>
+                    <li>
+                        <a href="#" class=""><i class="fa-solid fa-hourglass-end"></i>Unlimited-Faucet</a>
+                    </li>
+                    <li>
+                        <a href="#" class=""><i class="fa-solid fa-link"></i>Shortlink Wall</a>
+                    </li>
+                    <li>
+                        <a href="#" class=""><i class="fa-brands fa-adn"></i>Iframe Ads</a>
+                    </li>
+                    <li>
+                        <a href="#" class=""><i class="fa-brands fa-adn"></i>Window Ads</a>
+                    </li>
+                    <li>
+                        <a href="#" class=""><i class="fa-solid fa-wand-magic-sparkles"></i>Challengs</a>
+                    </li>
+                    <li>
+                        <a href="#" class=""><i class="fa-solid fa-clock"></i>N-Faucet</a>
+                    </li>
+                    <li>
+                        <a href="#" class=""><i class="fa-solid fa-bolt"></i>Volts Mining</a>
+                    </li>
+                    <li class="sub-menu">
+                        <a href="#" class=""><i class="fa-brands fa-pix"></i>Buy Ads
+                           <div class="fa fa-caret-down right"></div>
+                        </a>
+                        <ul class="left-menu-dp">
+                            <li><a href=""><i class="fa-solid fa-plus"></i>Creat Ads</a></li>
+                            <li><a href=""><i class="fa-solid fa-bars-progress"></i>Manage Ads</a></li>
+                            <li><a href=""><i class="fa-solid fa-shuffle"></i>Transfer</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class=""><i class="fa-solid fa-layer-group"></i>Change Password</a>
+                    </li>
+                    <li>
+                        <a href="#" class=""><i class="fa-solid fa-clock-rotate-left"></i>Account Histroy</a>
+                    </li>
+                    <li>
+                        <a href="#" class=""><i class="fa-solid fa-clock-rotate-left"></i>Logout</a>
+                    </li>
+                    <li>
+                        <a href="#" class=""><i class="fa-solid fa-clock-rotate-left"></i>Logout</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+
+
+        <!-- sidebar-start end -->
+
+        <!-- --------------main-content------------- -->
+        <div class="content-wrapper hide">
+            <section class="deshboard-top-sec">
+                <div class="container-fluid">
+                    <div class="row mx-3">
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                            <div class="features-card">
+                                <div class="widget-heading py-3 text-center">
+                                    <h4 class="section_heading">Withdraw</h4>
+                                    <p>Enter Your Account Email for Faucetpay/Cwallet Withdrawal</p>
+                                </div>
+                                <br>
+                                <div class="widget-content widget-content-area">
+                                    <form action="1xpepe/withdraw" method="POST">
+                                        <div class="form-group mb-4">
+                                            <label for="wallet" style="font-weight:bold;">Wallet</label>
+                                            <input type="email" class="form-control" name="wallet" id="wallet" value="" required>
+                                        </div>
+                        
+                                        <div class="form-group mb-4">
+                                            <label for="withdraw_amount" style="font-weight:bold;">Amount</label>
+                                            <input type="number" class="form-control" name="amount" id="withdraw_amount" min="<?= $settings['thresh_hold'] ?>" max="<?= max($settings['thresh_hold'], floor($user['balance'])) ?>" value="<?= floor($user['balance']) ?>" autocomplete="off" required>
+                                        </div>
+                        
+                                        <div class="row">
+                                            <style>
+                                                .card-input-element {
+                                                    display: none;
+                                                }
+                        
+                                                .panel-default>.panel-heading {
+                                                    color: #fff;
+                                                    
+                                                    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,9,63,0.5960636085488883) 35%, rgba(0,212,255,1) 100%);
+                                                    border-color: #f82c62;
+                                                }
+                        
+                                                .panel-heading {
+                                                    padding: 10px 15px;
+                                                    border-bottom: 1px solid transparent;
+                                                    border-top-left-radius: 3px;
+                                                    border-top-right-radius: 3px;
+                                                }
+                        
+                                                .panel-body {
+                                                    padding: 15px;
+                                                    background-color: #040916;
+                                                }
+                        
+                                                .card-input {
+                                                    margin: 10px;
+                                                    padding: 00px;
+                                                }
+                        
+                                                .card-input:hover {
+                                                    cursor: pointer;
+                                                }
+                        
+                                                .card-input-element:checked+.card-input {
+                                                    box-shadow: 0 0 5px 5px rgb(255 46 89 / 70%);
+                                                }
+                        
+                                                .progress-bar-warning {
+                                                    background-color: #f0ad4e;
+                                                }
+                        
+                                                .progress-bar-danger {
+                                                    background-color: #d9534f;
+                                                }
+                        
+                                                .progress-bar-success {
+                                                    background-color: #5cb85c;
+                                                }
+                                            </style>
+                                            <div class="col-md-6 col-lg-4 col-sm-12">
+                                                <label style="width: 100%; display: inline-block;margin-bottom: 5px;font-weight: 700;">
+                                                    <input type="radio" name="method" class="method card-input-element" data-value="" data-coincode="" value="" />
+                                                    <div class="panel panel-default card-input" style="background: #006fff;">
+                                                        <div class="panel-heading">
+                                                            -Bitcoin
+                                                            <img class="currency-image" src="assets/img/btc.png" width="30px">
+                                                            <span style="float: right; color: orangered;">Out of Stock</span>
+                                                        </div>
+                                                        <div class="panel-body">
+                                                            <p class="you_get">0.0005</p>
+                                                            <div class="progress" style="border-radius:10px;">
+                                                                <div class="progress-bar progress-bar-danger text-center progress-bar-striped" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width:0%">
+                                                                    0%
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

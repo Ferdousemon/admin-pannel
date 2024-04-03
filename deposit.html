@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/sass.css">
+    <link rel="stylesheet" href="assets/css/layout.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+</head>
+<body>
+    <div class="main-wrapper">
+        <!-- -----navbar----- -->
+        <div class="header-container fixed-top">
+            <header class="header navbar navber-expand-sm expand-header">
+                <div class="header-left d-flex">
+                    <div class="logo">
+                        <a href="#" class="text-white">1xpepe</a>
+                    </div>
+                    <a href="#" class="sidebarcollapse" id="toggleSidebar" data-placement="bottom">
+                        <span class="fa-solid fa-bars"> </span>
+                    </a>
+                </div>
+                <ul class="navbar-itme flex-row ml-auto">
+                    <li class="nav-item  dropdown user-profile-dropdown">
+                        <a href="" class="navlink user" id="notify" data-bs-toggle="dropdown">
+                            <img src="assets/img/bell-icon.svg" alt="" class="icon">
+                            <p class="count">5</p>
+                        </a>
+                        <div class="dropdown-menu">
+                            <div class="dp-main-menu">
+                                <a href="" class="dropdown-item message-item">
+                                    <img src="assets/img/server.svg" alt="" class="user-note">
+                                    <div class="note-info-desmis">
+                                        <div class="user-notify-info">
+                                            <p class="note-name">Server Rebooted</p>
+                                            <p class="note-time">20min</p>
+                                        </div>
+                                        <p class="status-link"><span class="fas fa-times"></span></p>
+                                    </div>
+                                </a>
+                                <a href="" class="dropdown-item message-item">
+                                    <img src="assets/img/server.svg" alt="" class="user-note">
+                                    <div class="note-info-desmis">
+                                        <div class="user-notify-info">
+                                            <p class="note-name">Server Rebooted</p>
+                                            <p class="note-time">20min</p>
+                                        </div>
+                                        <p class="status-link"><span class="fas fa-times"></span></p>
+                                    </div>
+                                </a>
+                                <a href="" class="dropdown-item message-item">
+                                    <img src="assets/img/server.svg" alt="" class="user-note">
+                                    <div class="note-info-desmis">
+                                        <div class="user-notify-info">
+                                            <p class="note-name">Server Rebooted</p>
+                                            <p class="note-time">20min</p>
+                                        </div>
+                                        <p class="status-link"><span class="fas fa-times"></span></p>
+                                    </div>
+                                </a>
+                                <a href="" class="dropdown-item message-item">
+                                    <img src="assets/img/server.svg" alt="" class="user-note">
+                                    <div class="note-info-desmis">
+                                        <div class="user-notify-info">
+                                            <p class="note-name">Server Rebooted</p>
+                                            <p class="note-time">20min</p>
+                                        </div>
+                                        <p class="status-link"><span class="fas fa-times"></span></p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item  dropdown user-profile-dropdown">
+                        <a href="" class="navlink user" id="notify" data-bs-toggle="dropdown">
+                            <img src="assets/img/telegram.svg" alt="" class="icon">
+                        </a>
+                    </li>
+                    <li class="nav-item  dropdown user-profile-dropdown">
+                        <a href="" class="navlink user" id="notify" data-bs-toggle="dropdown">
+                            <img src="assets/img/user.svg" alt="" class="icon">
+                            
+                        </a>
+                        <div class="dropdown-menu">
+                            <div class="dp-main-menu">
+                                <a href="" class="dropdown-item message-item">
+                                    <img src="assets/img/user-profile.svg" alt="" class="user-note">
+                                    <div class="note-info-desmis">
+                                        <div class="user-notify-info">
+                                            <p class="note-name">My Profile</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="" class="dropdown-item message-item">
+                                    <img src="assets/img/dollar-symbol.svg" alt="" class="user-note">
+                                    <div class="note-info-desmis">
+                                        <div class="user-notify-info">
+                                            <p class="note-name">Balance:<span>4.00</span></p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="" class="dropdown-item message-item">
+                                    <img src="assets/img/logout.svg" alt="" class="user-note">
+                                    <div class="note-info-desmis">
+                                        <div class="user-notify-info">
+                                            <p class="note-name">Logout</p>
+                                        </div>
+                                    </div>
+                                </a>
+
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item  dropdown user-profile-dropdown">
+                        <a href="" class="navlink user" id="notify" data-bs-toggle="dropdown">
+                            <img src="assets/img/settings.svg" alt="" class="icon">
+                            
+                        </a>
+                    </li>
+
+                </ul>
+            </header>
+            
+        </div>
+        <!-- ============== navbar end ================ -->
+        <!-- sidebar-start  -->
+        <div class="left-menu hide">
+            <nav class="animated bouncInDown">
+                <ul id="sidebar">
+                    <li class="active">
+                        <a href="#" class=""><i class="fa-solid fa-house-user"></i>Dashboard</a>
+                    </li>
+                    <li>
+                        <a href="refferals.html" class=""><i class="fa-solid fa-people-group"></i>Referrals</a>
+                    </li>
+                    <li>
+                        <a href="refferals-contest.html" class=""><i class="fa-solid fa-trophy"></i>Referrals Contest</a>
+                    </li>
+                    <li>
+                    <li>
+                        <a href="shortlink-contest.html" class=""><i class="fa-solid fa-star"></i>Shortlink Contest</a>
+                    </li>
+                    <li>
+                        <a href="withdraw.html" class=""><i class="fa-solid fa-wallet"></i>Wallet</a>
+                    </li>
+                    <li>
+                        <a href="deposit.html" class=""><i class="fa-solid fa-download"></i>Deposit</a>
+                    </li>
+                    <li>
+                        <a href="coupon.html" class=""><i class="fa-solid fa-ticket"></i>Daily coupon</a>
+                    </li>
+                    <li>
+                        <a href="article.html" class=""><i class="fa-solid fa-newspaper"></i>Article Ads</a>
+                    </li>
+                    <li>
+                        <a href="#" class=""><i class="fa-brands fa-buffer"></i>Offers & Surveys</a>
+                    </li>
+                    <li>
+                        <a href="#" class=""><i class="fa-solid fa-question"></i>quiz</a>
+                    </li>
+                    <li>
+                        <a href="#" class=""><i class="fa-solid fa-business-time"></i>Facuet</a>
+                    </li>
+                    <li>
+                        <a href="#" class=""><i class="fa-solid fa-hourglass-end"></i>Unlimited-Faucet</a>
+                    </li>
+                    <li>
+                        <a href="#" class=""><i class="fa-solid fa-link"></i>Shortlink Wall</a>
+                    </li>
+                    <li>
+                        <a href="#" class=""><i class="fa-brands fa-adn"></i>Iframe Ads</a>
+                    </li>
+                    <li>
+                        <a href="#" class=""><i class="fa-brands fa-adn"></i>Window Ads</a>
+                    </li>
+                    <li>
+                        <a href="#" class=""><i class="fa-solid fa-wand-magic-sparkles"></i>Challengs</a>
+                    </li>
+                    <li>
+                        <a href="#" class=""><i class="fa-solid fa-clock"></i>N-Faucet</a>
+                    </li>
+                    <li>
+                        <a href="#" class=""><i class="fa-solid fa-bolt"></i>Volts Mining</a>
+                    </li>
+                    <li class="sub-menu">
+                        <a href="#" class=""><i class="fa-brands fa-pix"></i>Buy Ads
+                           <div class="fa fa-caret-down right"></div>
+                        </a>
+                        <ul class="left-menu-dp">
+                            <li><a href=""><i class="fa-solid fa-plus"></i>Creat Ads</a></li>
+                            <li><a href=""><i class="fa-solid fa-bars-progress"></i>Manage Ads</a></li>
+                            <li><a href=""><i class="fa-solid fa-shuffle"></i>Transfer</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class=""><i class="fa-solid fa-layer-group"></i>Change Password</a>
+                    </li>
+                    <li>
+                        <a href="#" class=""><i class="fa-solid fa-clock-rotate-left"></i>Account Histroy</a>
+                    </li>
+                    <li>
+                        <a href="#" class=""><i class="fa-solid fa-clock-rotate-left"></i>Logout</a>
+                    </li>
+                    <li>
+                        <a href="#" class=""><i class="fa-solid fa-clock-rotate-left"></i>Logout</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+
+
+        <!-- sidebar-start end -->
+
+        <!-- ---main-content--- -->
+        <div class="content-wrapper hide">
+            <section class="deshboard-top-sec">
+                <div class="container-fluid">
+                    <div class="row px-3">
+                        <div class="col-12">
+                            <div class="welcome-card">
+                                <div class="widget-header">
+                                    <h4 class="fw-bold py-3 text-center">Advertising <span class="head-d">Deposit</span></h4>
+                                </div>
+                                
+                                <div class="widget-content widget-content-area">
+                                    <p class="text-danger text-center"><b>We Accept FaucetPay & Direct To Deposit</b></p>
+                                    
+                                    <form action="https://faucetpay.io/merchant/webscr" method="POST"   id="dep_form">
+                                        <div class="form-group">
+                                            <label>Amount (USD)</label>
+                                            <div class="row" style="margin-bottom: 2px;">
+                                                <div class="col-sm-6">
+                                                    <div class="input-group mb-2">
+                                                        <div class="input-group-prepend">
+                                                            <span class="input-group-text bgp text-white" id="targetCurrency">USD</span>
+                                                        </div>
+                                                        <input type="number" step="0.01" name="token" id="token" class="form-control" onchange="">
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="col-sm-6">
+                                                    <div class="input-group mb-2 currency-value">
+                                                        <div class="input-group-prepend">
+                                                            <span class="input-group-text bgp text-white">Coin</span>
+                                                        </div>
+                                                        <input disabled type="number" name="amount" id="usd" class="form-control" min="1" step="1">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <select class="form-control" name="method" id="method">
+                                                <option value="faucetpay">FaucetPay</option>
+                                                <option value="ccpayment">Direct</option>
+                                            </select>
+                                        </div>
+                                            
+                                        <input type="hidden" name="merchant_username" value="">
+                                        <input type="hidden" name="item_description" value="Deposit to">
+                                        <input type="hidden" name="currency1" value="USD">
+                                        <input type="hidden" name="currency2" value="">
+                                        <input type="hidden" id="amount1" name="amount1" value="1">
+                                        <input type="hidden" name="custom" value="">
+                                        <input type="hidden" name="callback_url" value="">
+                                        <input type="hidden" name="success_url" value="">
+                                        <input type="hidden" name="cancel_url" value="">
+                                        
+                                        <center><small id="minDep">Minimum Deposit - 1 USD</small></center>
+                                        <center><button type="submit" class="btn solid_btn text-white btn-lg"><b><i class="bx bx-chevrons-up"></i> DEPOSIT <i class="bx bx-chevrons-up"></i></b></button></center>
+                                    </form>
+                                    
+                                    <div style="overflow: hidden; text-align: center;">
+                                        <!-- Content here -->
+                                    </div>
+                                    
+                                    <!-- The following PHP section is removed -->
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row px-3">
+                        <div class="col-12">
+                            <div class="welcome-card">
+                                <div class="widget-header">
+                                    <h4 class="fw-bold py-3">Deposit History</h4>
+                                </div>
+                                
+                                <div class="widget-content widget-content-area">
+                                    <!-- PHP code removed -->
+                            
+                                    <table class="table text-center">
+                                        <thead class="bgp">
+                                            <tr>
+                                                <th scope="col">Code</th>
+                                                <th scope="col">Status</th>
+                                                <th scope="col">Amount</th>
+                                            </tr>
+                                        </thead>
+                                        
+                                        <tbody>
+                                            <!-- PHP loop removed -->
+                                            <tr>
+                                                <td scope="row">Sample Code</td>
+                                                <td>Sample Status</td>
+                                                <td>Sample Amount</td>
+                                            </tr>
+                                            <!-- Additional rows can be added as needed -->
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+
+            </section>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

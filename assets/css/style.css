@@ -1,0 +1,400 @@
+/* =============main-content wrapper============ */
+
+.content-wrapper{
+    margin-left: 240px;
+    margin-top: 65px;
+    transition: .5s;
+}
+.content-wrapper.hide{
+    margin-left: 0;
+}
+
+/* -------------card-lg------------- */
+.card-lg{
+display: flex;
+align-items: center;
+padding: 20px;
+font-weight: 300;
+border-radius: 10px;
+margin-bottom: 18px;
+color: var(--white-color);
+box-shadow: 10px 0 40px hsla(0, 0%, 0%, 0.75);
+background: linear-gradient(to right bottom, #0a149e, #3a05ca);
+}
+.card-lg .icon {
+    max-width: 100px;
+  }
+  .card-lg .icon > img {
+    width: 100%;
+  }
+  .card-lg h4 {
+    font-weight: 600;
+  }
+  .card-lg h4 {
+    padding-left: 20px;
+  }
+.card-lg p{
+    padding-left: 20px;
+}
+/* --------progress-card------- */
+.progress-card{
+    gap: 20px;
+    color: var(--white-color);
+    padding: 38px 28px;
+    align-items: center;
+    border-radius: 8px;
+    background: #1b0754;
+    /* box-shadow: 10px 0 40px hsla(0, 0%, 0%, 0.75); */
+    margin-top: 15px;
+}
+.progress-card > p {
+    font-weight: 500;
+}
+/* ---------refer-wrap--------- */
+
+.refer-wrap{
+    gap: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 38px 28px;
+    border-radius: 8px;
+    background: #2a80f1;
+    color: var(--white-color);
+    margin-top: 20px;
+
+}
+.refer-link {
+    width: 70%;
+    overflow: hidden;
+    border-radius: 20px;
+    position: relative;
+    background: hsl(236, 28%, 12%);
+  }
+  .refer-link input {
+    border: 0;
+    outline: 0;
+    width: 100%;
+    padding: 12px;
+    margin: 0 auto;
+    text-align: center;
+    color: var(--white-color);
+    background: transparent;
+  }
+
+  /* ---------earn-more option---------- */
+  .earn-more{
+    gap: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 8px;
+    padding: 38px 50px;
+    background: #BD33FF;
+    color: #000;
+    font-weight: 500;
+    box-shadow: 10px 10px 5px 12px #ffffff;
+    margin-top: 20px;
+  }
+  .earn-more p{
+    font-size: 20px;
+  }
+  .earn-more button{
+    width: 130px;
+    height: 40px;
+    font-size: 16px;
+    background: rgba(28,199,255,1);
+    border-radius: 4px;
+    background: #1CC7FF;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    border: 0
+  }
+  
+  /* ----------------refferals.html css style--------- */
+
+  .commision-card{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .commision-dp{
+    display: block;
+    position: relative;
+    /* justify-content: space-between; */
+
+  }
+  .refferals-card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    font-weight: 300;
+    border-radius: 10px;
+    margin-bottom: 18px;
+    color: var(--white-color);
+    box-shadow: 10px 0 40px hsla(0, 0%, 0%, 0.75);
+    background: linear-gradient(to right bottom, #0a149e, #3a05ca);
+
+  }
+  .refferals-card i{
+    font-size: 30px;
+    background: #ad03fc;
+    border-radius: 50%;
+    max-width: 100px;
+    padding: 10px;
+    /* padding-right: 15px; */
+    /* padding-left: 8px; */
+  }
+  .commision-count{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: #1CC7FF;
+    box-shadow: 10px 0 40px hsla(0, 0%, 0%, 0.75);
+    padding: 38px 40px;
+    border-radius: 8px;
+    color: var(--white-color);
+    margin-top: 20px;
+  }
+  .commision-count i{
+    font-size: 30px;
+    background: #ad03fc;
+    border-radius: 50%;
+    max-width: 100px;
+    padding: 10px;
+     /* padding-right: 15px; */
+    /* padding-left: 8px; */
+  }
+
+  .reffer-link{
+    gap: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 38px 28px;
+    border-radius: 8px;
+    background: #2a80f1;
+    color: var(--white-color);
+    margin-left: 20px;
+  }
+  .refferlink-wrap{
+      width: 70%;
+      overflow: hidden;
+      border-radius: 20px;
+      position: relative;
+      background: hsl(236, 28%, 12%);
+    
+  }
+  .refferlink-wrap input{
+    border: 0;
+    outline: 0;
+    width: 100%;
+    padding: 12px;
+    margin: 0 auto;
+    text-align: center;
+    color: var(--white-color);
+    background: transparent;
+  }
+.features-card{
+  gap: 20px;
+  color: var(--white);
+  padding: 38px 28px;
+  align-items: center;
+  border-radius: 8px;
+  background: var(--main-color);
+  box-shadow: 10px 0 40px hsla(0, 0%, 0%, 0.75);
+  margin-top: 50px;
+  color: var(--white-color);
+}
+.features-card h4{
+  font-weight: 500;
+}
+.features-card p{
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+}
+table {
+  margin-top: 10px;
+}
+
+tr,
+td,
+th {
+  color: #ffffff;
+} 
+
+thead {
+  background-color: #0773ff;
+  color: #ffffff;
+  font-weight: bold;
+}
+.welcome-card{
+  overflow: hidden;
+    padding: 20px;
+    margin-bottom: 32px;
+    border-radius: 16px;
+    position: relative;
+    background: #4e30c5;
+    box-shadow: 4px 4px 2rem 0 hsl(30.09deg 95.34% 25.74%/64%);
+    color: var(--white-color);
+    margin-top: 50px;
+}
+.welcome-card h4 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+.welcome-card p {
+  font-size: 1rem;
+}
+
+
+/* --------------withdraw css----------- */
+.features-card{
+  gap: 20px;
+  color: var(--white-color);
+  padding: 38px 28px;
+  align-items: center;
+  border-radius: 8px;
+  background: #4e30c5;
+  box-shadow: 10px 0 40px hsla(0, 0%, 0%, 0.75);
+}
+.form-control {
+  background-color: hsl(236, 28%, 12%);
+  color: #ffffff;
+  border: none;
+}
+.section_heading {
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+.form-control:focus {
+  background-color: hsl(236, 28%, 12%);
+  box-shadow: none;
+  color: #ffffff;
+}
+
+/* -------deposit--------- */
+.widget-header  .head-d{
+  color: #fccf03;
+}
+.input-group {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  width: 100%;
+}
+.form-control {
+  background: var();
+  color: #fff!important;
+  border: 2px solid #ffb92e
+}
+.form-control:focus {
+  box-shadow: none;
+  background: var();
+  border: 2px solid #ffb92e
+}
+.form-control::placeholder {
+  color: #ffdead;
+  opacity: 1
+}
+.input-group-text {
+  font-size: 20px;
+  background: #ffb92e;
+  color: #fff;
+  border: 2px solid #ffb92e
+}
+.solid_btn {
+  font-weight: 700;
+  display: inline-block;
+  padding: 10px 30px;
+  background-color: #ffb92e;
+  margin-top: 10px;
+  border-radius: 5px;
+  transition: .3s all linear
+}
+.solid_btn:hover {
+  background-color: #f0a206
+}
+   
+/* ----------articles ad---------- */
+.finance-card{
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 20px;
+  align-items: center;
+  background: #f59542;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 4px 4px 2rem 0 hsl(30.09deg 95.34% 25.74%/64%);
+}
+.finance-card .icon{
+  font-size: 2rem;
+  color: #fff;
+  margin-right: 20px;
+  background: #a74717;
+  padding: 10px 15px;
+  border-radius: 10px
+}
+.finance-card .details h2{
+  font-weight: 700;
+  font-size: 2.3rem;
+  color: #fff
+}
+.finance-card .details p{
+  font-weight: light;
+  font-size: .9rem;
+  color: #fff
+}
+
+.claim-card{
+  background: var(--main-grident);
+  box-shadow: 4px 4px 2rem 0 hsl(30.09deg 95.34% 25.74%/64%);
+  padding: 20px;
+  margin-bottom: 28px;
+  border-radius: 10px;
+  color: var(--white-color);
+}
+.claim-pills {
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+}
+  
+.claim-pills .pil {
+  background: rgb(255 124 10/21%);
+  padding: 5px 10px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+.claim-btn {
+  padding: 10px;
+  display: flex;
+  font-weight: 600;
+  border-radius: 99px;
+  justify-content: center;
+  transition: all .3s ease;
+  text-transform: capitalize;
+  background: linear-gradient(to right,#ff9549,#ffb92e);
+  border: 2px solid #ffb92e
+}
+.claim-btn:hover {
+  background: 0 0;
+  border-color: #ffb92e
+}
+  
