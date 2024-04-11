@@ -398,3 +398,143 @@ thead {
   border-color: #ffb92e
 }
   
+/* ------------offerwal---------- */
+.offerwall_card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 95%;
+  padding: 35px 95px;
+  border-radius: 10px;
+  box-shadow: -1px 3px 10px 3px rgb(126 115 179/30%);
+  margin: 1rem 0;
+  position: relative;
+  background: var( --main-color-alt);
+}
+
+.offerwall_card > img {
+  width: 150px;
+}
+
+.popularity {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background-color: #ffb92e;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 10px 0 10px 0;
+}
+.pupularity_percentage {
+  position: absolute;
+  border-radius: 10px;
+  left: 2px;
+  bottom: 0;
+  background-color: #ff6323;
+  border: 2px solid #ff6323;
+}
+@import url('https://fonts.googleapis.com/css?family=Lato:400,500,600,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+.wrapper {
+    display: block;
+    background: rgb(237 149 34 / 34%);
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    padding: 20px 15px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.wrapper .option {
+    background: #cc620f;
+    height: 100%;
+    width: 100%;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px 10px;
+    transition: all 0.3s ease;
+    margin: 10px 0px;
+}
+
+.wrapper .option .dot {
+    height: 20px;
+    width: 20px;
+    background: #b76a33;
+    border-radius: 50%;
+    position: relative;
+}
+
+.wrapper .option .dot::before {
+    position: absolute;
+    content: "";
+    top: 4px;
+    left: 4px;
+    width: 12px;
+    height: 12px;
+    background: #0069d9;
+    border-radius: 50%;
+    opacity: 0;
+    transform: scale(1.5);
+    transition: all 0.3s ease;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+#option-1:checked:checked~.option-1,
+#option-2:checked:checked~.option-2,
+#option-3:checked:checked~.option-3,
+#option-4:checked:checked~.option-4 {
+    border-color: #00b300;
+    background: #00b300;
+}
+
+#option-1:checked:checked~.option-1 .dot,
+#option-2:checked:checked~.option-2 .dot,
+#option-3:checked:checked~.option-3 .dot,
+#option-4:checked:checked~.option-4 .dot {
+    background: #fff;
+}
+
+#option-1:checked:checked~.option-1 .dot::before,
+#option-2:checked:checked~.option-2 .dot::before,
+#option-3:checked:checked~.option-3 .dot::before,
+#option-4:checked:checked~.option-4 .dot::before {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.wrapper .option span {
+    font-size: 20px;
+    color: #fff;
+}
+
+#option-1:checked:checked~.option-1 span,
+#option-2:checked:checked~.option-2 span,
+#option-3:checked:checked~.option-3 span,
+#option-4:checked:checked~.option-4 span {
+    color: #fff;
+}
+
+.dot {
+    height: 60px;
+    width: 60px;
+    background-color: #fe8f00;
+    border-radius: 50%;
+    display: inline-block;
+    font-size: 40px;
+    color: #fff;
+}
