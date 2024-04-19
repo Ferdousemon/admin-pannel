@@ -538,3 +538,12 @@ input[type="radio"] {
     font-size: 40px;
     color: #fff;
 }
+
+/* ----------ptc view ads-------- */
+
+.ptc-header{
+  background-color: #172b4d;
+  padding: 20px;
+  height: 70px;
+  max-height: 70px;
+}

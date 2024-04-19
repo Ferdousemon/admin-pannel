@@ -222,132 +222,58 @@
             <section class="deshboard-top-sec">
                 <div class="container-fluid">
                     <div class="row px-3">
-                        <div class="col-12">
-                            <div class="welcome-card">
-                                <h4 class="text-center fw-bold">Convert Point To Coin</h4>
-                                <div class="widget-content widget-content-area">
-                                    <p class="text-center fw-bold text-success mb-3">
-                                        <b>1 Point = 34600 Coins</b>
-                                    </p>
-                                    <div class="btn btn-info mb-3 text-center" style="display: flex;justify-content: center; align-items: center;">
-                                        <p style="margin: 0;">Offers worth 0.01 USD or above may take upto 1 - 5 days to be approved, also depends on your ip score</p>
-                                    </div>
-                                    <div class="table-responsive">
-                                        <table class="table text-center" style="margin-bottom: 0;">
-                                            <thead class="">
-                                              <tr>
-                                                
-                                                <th scope="col">Balance</th>
-                                                <th scope="col">Amount(point)</th>
-                                                <th scope="col">Receive</th>
-                                              </tr>
-                                            </thead>
-                                            <tbody>
-                                              <tr>
-                                                
-                                                <td>0 Points</td>
-                                                <td>
-                                                    <input type="number" class="form-control" name="" id="">
-                                                </td>
-                                                <td>0 coins</td>
-                                              </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                     <div class="d-grid gap-2">
-                                        <button class="btn btn-danger mt-2" type="button"><i class="fas fa-exchange-alt"> convert</i></button>
-                                    </div>
+                        <section>
+                            <div class="row">
+                                <div class="ads">
+                                    <center>
+                                        DASHBOARD_TOP_AD_PLACEHOLDER
+                                    </center>
                                 </div>
-                            </div>  
-                        </div>
-                    </div>
-                    <div class="row px-3">
-                        <div class="col-lg-4 col-md-6">
-                            <a href="offerwalls.html" class="offerwall_link">
-                                <div class="offerwall_card">
-                                    <img src="assets/img/timewall.svg" />
-                                    <div class="popularity">
-                                        <p>Popularity</p>
-                                    </div>
-                                    <div class="pupularity_percentage" style="width: 70%;"></div>
-                                </div>
-                            </a>
-                        </div>
+                                <style>.modal-backdrop.fade.show{ display:none !important;}</style>
+                                <div class="col-12 text-center my-5" style="margin-bottom: 5px;">
+                                    <div class="welcome-card">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Confirm Visiting - ADS_NAME_PLACEHOLDER</h5>
+                                            <p class="card-text">Remember- You have to wait in the window which open after you click on the start button until timer end or else you will be disqualified!</p>
+                                            <div class="card-badge mb-2 mt-2 text-center">
+                                                <span class="badge" style="background-color: limegreen;">ADS_REWARD_PLACEHOLDER Coins</span>
+                                                <span class="ms-auto badge" style="background-color: crimson;">ADS_TIMER_PLACEHOLDER Seconds</span>
+                                            </div>
                         
-                        <div class="col-lg-4 col-md-6">
-                            <a href="offerwalls.html" class="offerwall_link">
-                                <div class="offerwall_card">
-                                    <img src="assets/img/cpx.svg" />
-                                    <div class="popularity">
-                                        <p>Popularity</p>
+                                            <div class="modal fade" id="windowPTCCaptcha_ADS_ID_PLACEHOLDER" tabindex="-1" role="dialog" aria-hidden="true">
+                                                <div class="modal-dialog" role="document">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h5 class="modal-title">Complete the captcha to get reward</h5>
+                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                <span aria-hidden="true">&times;</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <form action="PTC_VERIFYWINDOW_URL_PLACEHOLDER" method="POST">
+                                                                <center>
+                                                                    CAPTCHA_DISPLAY_PLACEHOLDER
+                                                                </center> 
+                                                                <input type="hidden" name="CSRF_NAME_PLACEHOLDER" value="CSRF_HASH_PLACEHOLDER">
+                                                                <input type="hidden" name="token" value="USER_TOKEN_PLACEHOLDER">
+                                                                <button id="verify" class="btn btn-success w-100 mb-2 mr-2 solid_btn text-white" type="submit">Verify</button>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <button id="start" class="btn btn-success w-100 mb-2 mr-2 solid_btn text-white">Start Now</button>
+                                        </div>
                                     </div>
-                                    <div class="pupularity_percentage" style="width: 85%;"></div>
                                 </div>
-                            </a>
-                        </div>
+                            </div>
                         
-                        <div class="col-lg-4 col-md-6">
-                            <a href="offerwalls.html" class="offerwall_link">
-                                <div class="offerwall_card">
-                                    <img src="assets/img/excentiv.svg" />
-                                    <div class="popularity">
-                                        <p>Popularity</p>
-                                    </div>
-                                    <div class="pupularity_percentage" style="width: 95%;"></div>
-                                </div>
-                            </a>
-                        </div>
-                        
-                        <div class="col-lg-4 col-md-6">
-                            <a href="offerwalls.html" class="offerwall_link">
-                                <div class="offerwall_card">
-                                    <img src="assets/img/adgatemedia.png" />
-                                    <div class="popularity">
-                                        <p>Popularity</p>
-                                    </div>
-                                    <div class="pupularity_percentage" style="width: 75%;"></div>
-                                </div>
-                            </a>
-                        </div>
-                        
-                        <div class="col-lg-4 col-md-6">
-                            <a href="offerwalls.html" class="offerwall_link">
-                                <div class="offerwall_card">
-                                    <img src="assets/img/lootably.png" />
-                                    <div class="popularity">
-                                        <p>Popularity</p>
-                                    </div>
-                                    <div class="pupularity_percentage" style="width: 65%;"></div>
-                                </div>
-                            </a>
-                        </div>
-                         
-                        <div class="col-lg-4 col-md-6">
-                            <a href="offerwalls.html" class="offerwall_link">
-                                <div class="offerwall_card">
-                                    <img src="assets/img/offertoro.png" />
-                                    <div class="popularity">
-                                        <p>Popularity</p>
-                                    </div>
-                                    <div class="pupularity_percentage" style="width: 70%;"></div>
-                                </div>
-                            </a>
-                        </div>
-                        
-                        <div class="col-lg-4 col-md-6">
-                            <a href="#" class="offerwall_link">
-                                <div class="offerwall_card">
-                                    <img src="assets/img/Wannads.png" />
-                                    <div class="popularity">
-                                        <p>Popularity</p>
-                                    </div>
-                                    <div class="pupularity_percentage" style="width: 83%;"></div>
-                                </div>
-                            </a>
-                        </div>
+                            <div class="ads">
+                                FOOTER_CODE_PLACEHOLDER
+                            </div>
+                        </section>
                         
                     </div>
-                    
                 </div>
 
             </section>

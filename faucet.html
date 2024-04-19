@@ -167,16 +167,16 @@
                         <a href="faucet.html" class=""><i class="fa-solid fa-business-time"></i>Faucet</a>
                     </li>
                     <li>
-                        <a href="#" class=""><i class="fa-solid fa-hourglass-end"></i>Unlimited-Faucet</a>
+                        <a href="nfaucet.html" class=""><i class="fa-solid fa-hourglass-end"></i>Unlimited-Faucet</a>
                     </li>
                     <li>
-                        <a href="#" class=""><i class="fa-solid fa-link"></i>Shortlink Wall</a>
+                        <a href="shortlink.html" class=""><i class="fa-solid fa-link"></i>Shortlink Wall</a>
                     </li>
                     <li>
-                        <a href="#" class=""><i class="fa-brands fa-adn"></i>Iframe Ads</a>
+                        <a href="ptc.html" class=""><i class="fa-brands fa-adn"></i>Iframe Ads</a>
                     </li>
                     <li>
-                        <a href="#" class=""><i class="fa-brands fa-adn"></i>Window Ads</a>
+                        <a href="ptc-window.html" class=""><i class="fa-brands fa-adn"></i>Window Ads</a>
                     </li>
                     <li>
                         <a href="#" class=""><i class="fa-solid fa-wand-magic-sparkles"></i>Challengs</a>
@@ -219,51 +219,79 @@
 
         <div class="content-wrapper hide">
             <section class="deshboard-top-sec">
-                <div class="container-fluid">
-                    <div class="row">
+                <div class="ccontainer-fluid">
+                    <div class="row px-3">
                         <div class="col-lg-4">
                             <div class="finance-card">
                                 <div class="icon">
                                     <i class="fas fa-clock"></i>
                                 </div>
                                 <div class="details">
-                                    <h2>Daily Quiz Limit</h2>
-                                    <p>Daily Quiz</p>
+                                    <h2>
+                                        Ready
+                                    </h2>
+                                    <p>Claim Every -- Minutes</p>
                                 </div>
                             </div>
                         </div>
+                    
                         <div class="col-lg-4">
                             <div class="finance-card">
                                 <div class="icon">
                                     <i class="fas fa-coins"></i>
                                 </div>
                                 <div class="details">
-                                    <h2>Daily Quiz Limit</h2>
-                                    <p>Daily Quiz</p>
+                                    <h2>--</h2>
+                                    <p>Reward Coins</p>
                                 </div>
                             </div>
                         </div>
+                    
                         <div class="col-lg-4">
                             <div class="finance-card">
                                 <div class="icon">
                                     <i class="fas fa-eye"></i>
                                 </div>
                                 <div class="details">
-                                    <h2>Daily Quiz Limit</h2>
-                                    <p>Daily Quiz</p>
+                                    <h2>Unlimited</h2>
+                                    <p>Daily Claim</p>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    
+                   
+                    
                     <div class="row">
                         <div class="col-12 col-md-8 col-lg-6 order-md-2 mb-4 text-center">
+                            <!-- PHP message display -->
                             <div class="alert alert-warning text-center">
                                 <a href="/links" style="color: black;">Daily Limit Reached, Now Complete <b><u>Shortlinks</u></b> For More Coins And Volts</a>
                             </div>
                             
+                            
+                            <form action="YOUR_FORM_ACTION_URL" method="POST">
+                               
+                                <input type="hidden" name="CSRF_NAME_PLACEHOLDER" id="token" value="CSRF_HASH_PLACEHOLDER">
+                                <input type="hidden" name="token" value="USER_TOKEN_PLACEHOLDER">
+
+                                <div class="atb my-2">
+                                    <div class="antibotlinks"></div>
+                                    <div class="antibotlinks"></div>
+                                    <div class="antibotlinks"></div>
+                                </div>
+                                
+                                <button type="submit" class="btn solid_btn btn-lg text-white claim-button" disabled><i class="far fa-check-circle"></i> Claim Now</button>
+                               
+                            </form>
+                            
                         </div>
-                        <div class="col-6 col-md-2 col-lg-3 order-md-1 left-ads"><?= $settings['faucet_left_ad'] ?></div>
-                        <div class="col-6 col-md-2 col-lg-3 order-md-3 right-ads"><?= $settings['faucet_right_ad'] ?></div>
+                        <div class="col-6 col-md-2 col-lg-3 order-md-1 left-ads">
+                            <!-- Left advertisement content -->
+                        </div>
+                        <div class="col-6 col-md-2 col-lg-3 order-md-3 right-ads">
+                            <!-- Right advertisement content -->
+                        </div>
                     </div>
                     
                 </div>
