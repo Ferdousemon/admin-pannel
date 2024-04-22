@@ -7,8 +7,9 @@
         overflow-y: scroll;
         background: var();
         transition: .5s;
-        /* margin-top: -3px; */
+        margin-top: -20px;
         z-index: 99;
+        
     }
     .content-wrapper{
         margin-left: 0;

@@ -206,7 +206,7 @@
                     <li>
                         <a href="#" class=""><i class="fa-solid fa-clock-rotate-left"></i>Logout</a>
                     </li>
-                    
+                   
                 </ul>
             </nav>
         </div>
@@ -217,76 +217,28 @@
 
         <div class="content-wrapper hide">
             <section class="deshboard-top-sec">
-                <div class="ccontainer-fluid">
-                    <div class="row px-3">
-                        <div class="col-lg-4">
-                            <div class="finance-card">
-                                <div class="icon">
-                                    <i class="fas fa-clock"></i>
-                                </div>
-                                <div class="details">
-                                    <h2>
-                                        Ready
-                                    </h2>
-                                    <p>Claim Every -- Minutes</p>
-                                </div>
-                            </div>
-                        </div>
-                    
-                        <div class="col-lg-4">
-                            <div class="finance-card">
-                                <div class="icon">
-                                    <i class="fas fa-coins"></i>
-                                </div>
-                                <div class="details">
-                                    <h2>--</h2>
-                                    <p>Reward Coins</p>
+                <div class="container-fluid">
+                    <div class="row mx-3">
+                        <div class="col-12">
+                            <div class="welcome-card">
+                                <div class="col-12">
+                                    <div class="col-12 layout-spacing">
+                                        <h4 class="fw-bold py-3">Transfer Fund</h4>
+                                        <div class="alert alert-danger text-center">You can transfer your account balance to deposit balance and you can not withdraw deposit balance any time</div>
+                                        
+                                        <!-- PHP code removed -->
+                                        
+                                        <form action="#" method="POST">
+                                            <div class="form-group mb-4">
+                                                <label for="transfer_amount">Amount (Coin)</label>
+                                                <input type="number" class="form-control" name="amount" id="transfer_amount" min="1" max="user_balance_value" autocomplete="off" required>
+                                            </div>
+                                            <input type="hidden" name="csrf_token" value="csrf_token_value">
+                                            <button type="submit" class="btn solid_btn w-100 text-white"><i class="fas fa-exchange-alt"></i> Transfer</button>
+                                        </form>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    
-                        <div class="col-lg-4">
-                            <div class="finance-card">
-                                <div class="icon">
-                                    <i class="fas fa-eye"></i>
-                                </div>
-                                <div class="details">
-                                    <h2>Unlimited</h2>
-                                    <p>Daily Claim</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                   
-                    
-                    <div class="row">
-                        <div class="col-12 col-md-8 col-lg-6 order-md-2 mb-4 text-center">
-                            <!-- PHP message display -->
-                            <div class="alert alert-warning text-center">
-                                <a href="/links" style="color: black;">Daily Limit Reached, Now Complete <b><u>Shortlinks</u></b> For More Coins And Volts</a>
-                            </div>
-                            <form action="YOUR_FORM_ACTION_URL" method="POST">
-                               
-                                <input type="hidden" name="CSRF_NAME_PLACEHOLDER" id="token" value="CSRF_HASH_PLACEHOLDER">
-                                <input type="hidden" name="token" value="USER_TOKEN_PLACEHOLDER">
-
-                                <div class="atb my-2">
-                                    <div class="antibotlinks"></div>
-                                    <div class="antibotlinks"></div>
-                                    <div class="antibotlinks"></div>
-                                </div>
-                                
-                                <button type="submit" class="btn solid_btn btn-lg text-white claim-button" disabled><i class="far fa-check-circle"></i> Claim Now</button>
-                               
-                            </form>
-                            
-                        </div>
-                        <div class="col-6 col-md-2 col-lg-3 order-md-1 left-ads">
-                            <!-- Left advertisement content -->
-                        </div>
-                        <div class="col-6 col-md-2 col-lg-3 order-md-3 right-ads">
-                            <!-- Right advertisement content -->
                         </div>
                     </div>
                     

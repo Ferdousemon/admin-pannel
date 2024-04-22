@@ -206,7 +206,7 @@
                     <li>
                         <a href="#" class=""><i class="fa-solid fa-clock-rotate-left"></i>Logout</a>
                     </li>
-                    
+                   
                 </ul>
             </nav>
         </div>
@@ -217,76 +217,60 @@
 
         <div class="content-wrapper hide">
             <section class="deshboard-top-sec">
-                <div class="ccontainer-fluid">
+                <div class="container-fluid">
                     <div class="row px-3">
-                        <div class="col-lg-4">
-                            <div class="finance-card">
-                                <div class="icon">
-                                    <i class="fas fa-clock"></i>
+                        <div class="col-12">
+                            <div class="welcome-card">
+                                <div class="widget-header">
+                                    <h4 class="fw-bold py-3">Unlock Achievements</h4>
+                                    <div class="alert alert-info text-center">
+                                        <i class="fas fa-exclamation-circle">
+                                            <span>Progress Will Refresh At 00:00 UTC Daily</span>
+                                        </i>
+                                    </div>
                                 </div>
-                                <div class="details">
-                                    <h2>
-                                        Ready
-                                    </h2>
-                                    <p>Claim Every -- Minutes</p>
+                    
+                                <div class="widget-content widget-content-area">
+                                    <div class="table-responsive">
+                                        <table class="table  mb-4 text-center">
+                                            <thead class="">
+                                                <tr>
+                                                    <th>Achievement</th>
+                                                    <th>Reward</th>
+                                                    <th>Progress</th>
+                                                    <th>Collect</th>
+                                                </tr>
+                                            </thead>
+                    
+                                            <tbody>
+                                                <tr>
+                                                    <td>Description of Achievement 1</td>
+                                                    <td>
+                                                        <span class="badge bg-info"><i class="fas fa-coins"></i> : 10</span>
+                                                        <span class="badge bg-info"><i class="fas fa-bolt"></i> : 5</span>
+                                                    </td>
+                                                    <td>
+                                                        <div class="progress br-30" style="margin: 0px auto;">
+                                                            <div class="progress-bar bg-secondary" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                                        </div>
+                                                        <br>
+                                                        5/10
+                                                    </td>
+                                                    <td>
+                                                        <button type="button" class="btn btn-success mb-2 mr-2 rounded-circle">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check">
+                                                                <polyline points="20 6 9 17 4 12"></polyline>
+                                                            </svg>
+                                                        </button>
+                                                    </td>
+                                                </tr>
+                                                <!-- Add more rows for other achievements -->
+                                            </tbody>
+                    
+                                        </table>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    
-                        <div class="col-lg-4">
-                            <div class="finance-card">
-                                <div class="icon">
-                                    <i class="fas fa-coins"></i>
-                                </div>
-                                <div class="details">
-                                    <h2>--</h2>
-                                    <p>Reward Coins</p>
-                                </div>
-                            </div>
-                        </div>
-                    
-                        <div class="col-lg-4">
-                            <div class="finance-card">
-                                <div class="icon">
-                                    <i class="fas fa-eye"></i>
-                                </div>
-                                <div class="details">
-                                    <h2>Unlimited</h2>
-                                    <p>Daily Claim</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                   
-                    
-                    <div class="row">
-                        <div class="col-12 col-md-8 col-lg-6 order-md-2 mb-4 text-center">
-                            <!-- PHP message display -->
-                            <div class="alert alert-warning text-center">
-                                <a href="/links" style="color: black;">Daily Limit Reached, Now Complete <b><u>Shortlinks</u></b> For More Coins And Volts</a>
-                            </div>
-                            <form action="YOUR_FORM_ACTION_URL" method="POST">
-                               
-                                <input type="hidden" name="CSRF_NAME_PLACEHOLDER" id="token" value="CSRF_HASH_PLACEHOLDER">
-                                <input type="hidden" name="token" value="USER_TOKEN_PLACEHOLDER">
-
-                                <div class="atb my-2">
-                                    <div class="antibotlinks"></div>
-                                    <div class="antibotlinks"></div>
-                                    <div class="antibotlinks"></div>
-                                </div>
-                                
-                                <button type="submit" class="btn solid_btn btn-lg text-white claim-button" disabled><i class="far fa-check-circle"></i> Claim Now</button>
-                               
-                            </form>
-                            
-                        </div>
-                        <div class="col-6 col-md-2 col-lg-3 order-md-1 left-ads">
-                            <!-- Left advertisement content -->
-                        </div>
-                        <div class="col-6 col-md-2 col-lg-3 order-md-3 right-ads">
-                            <!-- Right advertisement content -->
                         </div>
                     </div>
                     

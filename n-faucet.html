@@ -215,83 +215,37 @@
 
         <!-- sidebar-start end -->
 
+        <!-- ---main-content--- -->
         <div class="content-wrapper hide">
             <section class="deshboard-top-sec">
-                <div class="ccontainer-fluid">
-                    <div class="row px-3">
-                        <div class="col-lg-4">
-                            <div class="finance-card">
-                                <div class="icon">
-                                    <i class="fas fa-clock"></i>
+                <div class="container-fluid">
+                    <div class="row mx-3">
+                        <div class="col-12">
+                            <div class="welcome-card">
+                                <div class="widget-header">
+                                    <h4 class="fw-bold text-center py-3">Auto Faucet</h4>
                                 </div>
-                                <div class="details">
-                                    <h2>
-                                        Ready
-                                    </h2>
-                                    <p>Claim Every -- Minutes</p>
-                                </div>
-                            </div>
-                        </div>
                     
-                        <div class="col-lg-4">
-                            <div class="finance-card">
-                                <div class="icon">
-                                    <i class="fas fa-coins"></i>
-                                </div>
-                                <div class="details">
-                                    <h2>--</h2>
-                                    <p>Reward Coins</p>
-                                </div>
-                            </div>
-                        </div>
-                    
-                        <div class="col-lg-4">
-                            <div class="finance-card">
-                                <div class="icon">
-                                    <i class="fas fa-eye"></i>
-                                </div>
-                                <div class="details">
-                                    <h2>Unlimited</h2>
-                                    <p>Daily Claim</p>
+                                <div class="widget-content widget-content-area">
+                                    <div class="alert alert-arrow-left alert-icon-left alert-light-primary mb-4" role="alert">
+                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                            <svg>...</svg>
+                                        </button>
+                                        Please wait <b id="minute">5</b>:<b id="second">00</b> to get 10 coins
+                                    </div>
+                                    <div class="progress br-30">
+                                        <div class="progress-bar-striped bg-secondary" id="progress" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="60"></div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     
-                   
-                    
-                    <div class="row">
-                        <div class="col-12 col-md-8 col-lg-6 order-md-2 mb-4 text-center">
-                            <!-- PHP message display -->
-                            <div class="alert alert-warning text-center">
-                                <a href="/links" style="color: black;">Daily Limit Reached, Now Complete <b><u>Shortlinks</u></b> For More Coins And Volts</a>
-                            </div>
-                            <form action="YOUR_FORM_ACTION_URL" method="POST">
-                               
-                                <input type="hidden" name="CSRF_NAME_PLACEHOLDER" id="token" value="CSRF_HASH_PLACEHOLDER">
-                                <input type="hidden" name="token" value="USER_TOKEN_PLACEHOLDER">
-
-                                <div class="atb my-2">
-                                    <div class="antibotlinks"></div>
-                                    <div class="antibotlinks"></div>
-                                    <div class="antibotlinks"></div>
-                                </div>
-                                
-                                <button type="submit" class="btn solid_btn btn-lg text-white claim-button" disabled><i class="far fa-check-circle"></i> Claim Now</button>
-                               
-                            </form>
-                            
-                        </div>
-                        <div class="col-6 col-md-2 col-lg-3 order-md-1 left-ads">
-                            <!-- Left advertisement content -->
-                        </div>
-                        <div class="col-6 col-md-2 col-lg-3 order-md-3 right-ads">
-                            <!-- Right advertisement content -->
-                        </div>
-                    </div>
+                    <center style="overflow: hidden;">
+                        <!-- Insert your lottery_bottom_ad HTML here -->
+                    </center>
                     
                 </div>
-
             </section>
         </div>
     </div>

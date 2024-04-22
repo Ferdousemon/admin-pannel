@@ -215,78 +215,97 @@
 
         <!-- sidebar-start end -->
 
+        <!-- ---main-content--- -->
         <div class="content-wrapper hide">
             <section class="deshboard-top-sec">
-                <div class="ccontainer-fluid">
-                    <div class="row px-3">
-                        <div class="col-lg-4">
-                            <div class="finance-card">
-                                <div class="icon">
-                                    <i class="fas fa-clock"></i>
+                <div class="container-fluid">
+                    <div class="row mx-3">
+                        <div class="col-12">
+                            <div class="welcome-card">
+                                <div class="widget-header">
+                                    <div class="row">
+                                        <div class="col-xl-12 col-md-12 col-sm-12 col-12">
+                                            <h4 class="fw-bold text-center pb-3">Account History</h4>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="details">
-                                    <h2>
-                                        Ready
-                                    </h2>
-                                    <p>Claim Every -- Minutes</p>
+                    
+                                <div class="widget-content widget-content-area icon-tab">
+                                    <ul class="nav nav-tabs mb-3 mt-3 justify-content-center" id="iconTab" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" id="faucet-tab" href="#faucet">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-gift">
+                                                    <polyline points="20 12 20 22 4 22 4 12"></polyline>
+                                                    <rect x="2" y="7" width="20" height="5"></rect>
+                                                    <line x1="12" y1="22" x2="12" y2="7"></line>
+                                                    <path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"></path>
+                                                    <path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"></path>
+                                                </svg>
+                                                Timer Faucet
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" id="links-tab" data-toggle="tab" href="#links" role="tab" aria-controls="links" aria-selected="false"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-link">
+                                                    <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+                                                    <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+                                                </svg>
+                                                Shortlinks</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" id="ptc-tab" data-toggle="tab" href="#ptc" role="tab" aria-controls="ptc" aria-selected="false">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye">
+                                                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                                    <circle cx="12" cy="12" r="3"></circle>
+                                                </svg>
+                                                PTC ADS</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" id="offerwall-tab" data-toggle="tab" href="#offerwall" role="tab" aria-controls="offerwall" aria-selected="false">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-layers"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+                                                Offerwalls</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" id="task-tab" data-toggle="tab" href="#task" role="tab" aria-controls="task" aria-selected="false">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-list">
+                                                    <line x1="8" y1="6" x2="21" y2="6"></line>
+                                                    <line x1="8" y1="12" x2="21" y2="12"></line>
+                                                    <line x1="8" y1="18" x2="21" y2="18"></line>
+                                                    <line x1="3" y1="6" x2="3.01" y2="6"></line>
+                                                    <line x1="3" y1="12" x2="3.01" y2="12"></line>
+                                                    <line x1="3" y1="18" x2="3.01" y2="18"></line>
+                                                </svg>
+                                                Simple Tasks</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" id="withdrawals-tab" data-toggle="tab" href="#withdrawals" role="tab" aria-controls="withdrawals" aria-selected="false"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-download">
+                                                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                                    <polyline points="7 10 12 15 17 10"></polyline>
+                                                    <line x1="12" y1="15" x2="12" y2="3"></line>
+                                                </svg>
+                                                Withdrawals</a>
+                                        </li>
+                                        <!-- Other list items truncated for brevity -->
+                                    </ul>
+                    
+                                    <div class="tab-content" id="iconTabContent-1">
+                                        <div class="tab-pane fade active show" id="faucet">
+                                            <table class="table text-center">
+                                                <thead class="bgp">
+                                                    <tr>
+                                                        <th scope="col">#</th>
+                                                        <th scope="col">Amount (Coin)</th>
+                                                        <th scope="col">Time</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <!-- Faucet history table rows truncated for brevity -->
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <!-- Other tab panes truncated for brevity -->
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    
-                        <div class="col-lg-4">
-                            <div class="finance-card">
-                                <div class="icon">
-                                    <i class="fas fa-coins"></i>
-                                </div>
-                                <div class="details">
-                                    <h2>--</h2>
-                                    <p>Reward Coins</p>
-                                </div>
-                            </div>
-                        </div>
-                    
-                        <div class="col-lg-4">
-                            <div class="finance-card">
-                                <div class="icon">
-                                    <i class="fas fa-eye"></i>
-                                </div>
-                                <div class="details">
-                                    <h2>Unlimited</h2>
-                                    <p>Daily Claim</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                   
-                    
-                    <div class="row">
-                        <div class="col-12 col-md-8 col-lg-6 order-md-2 mb-4 text-center">
-                            <!-- PHP message display -->
-                            <div class="alert alert-warning text-center">
-                                <a href="/links" style="color: black;">Daily Limit Reached, Now Complete <b><u>Shortlinks</u></b> For More Coins And Volts</a>
-                            </div>
-                            <form action="YOUR_FORM_ACTION_URL" method="POST">
-                               
-                                <input type="hidden" name="CSRF_NAME_PLACEHOLDER" id="token" value="CSRF_HASH_PLACEHOLDER">
-                                <input type="hidden" name="token" value="USER_TOKEN_PLACEHOLDER">
-
-                                <div class="atb my-2">
-                                    <div class="antibotlinks"></div>
-                                    <div class="antibotlinks"></div>
-                                    <div class="antibotlinks"></div>
-                                </div>
-                                
-                                <button type="submit" class="btn solid_btn btn-lg text-white claim-button" disabled><i class="far fa-check-circle"></i> Claim Now</button>
-                               
-                            </form>
-                            
-                        </div>
-                        <div class="col-6 col-md-2 col-lg-3 order-md-1 left-ads">
-                            <!-- Left advertisement content -->
-                        </div>
-                        <div class="col-6 col-md-2 col-lg-3 order-md-3 right-ads">
-                            <!-- Right advertisement content -->
                         </div>
                     </div>
                     
@@ -297,7 +316,23 @@
     </div>
 
 
-
+    <style>
+        .icon-tab .nav-tabs li a {
+            background: hsl(216deg 85% 66%);
+            color: #fff;
+        }
+        .icon-tab .nav-tabs .nav-item.show .nav-link, .icon-tab .nav-tabs .nav-link.active{
+            background: #dc3545;
+            color: #fff;
+        }
+        .nav-tabs .nav-link {
+            margin: 5px;
+            background: 0 0;
+            border: 1px solid transparent;
+            border-top-left-radius: 0rem;
+            border-top-right-radius: 0rem;
+        }
+        </style>
 
 
 

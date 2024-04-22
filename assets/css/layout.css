@@ -144,8 +144,9 @@ p.note-time{
     box-shadow: -3px -10px 19px 1px #dbdada;
     overflow-y: scroll;
     transition: .5s;
-    margin-top: -16px;
+    margin-top: -20px;
     background: var(--white-color);
+    padding: 35px 0;
 }
 nav.animated{
     position: relative;
