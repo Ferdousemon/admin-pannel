@@ -218,104 +218,72 @@
         <div class="content-wrapper hide">
             <section class="deshboard-top-sec">
                 <div class="container-fluid">
-                    <div class="row mx-3">
-                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                            <div class="features-card">
-                                <div class="widget-heading py-3 text-center">
-                                    <h4 class="section_heading">Withdraw</h4>
-                                    <p>Enter Your Account Email for Faucetpay/Cwallet Withdrawal</p>
-                                </div>
-                                <br>
-                                <div class="widget-content widget-content-area">
-                                    <form action="1xpepe/withdraw" method="POST">
-                                        <div class="form-group mb-4">
-                                            <label for="wallet" style="font-weight:bold;">Wallet</label>
-                                            <input type="email" class="form-control" name="wallet" id="wallet" value="" required>
-                                        </div>
-                        
-                                        <div class="form-group mb-4">
-                                            <label for="withdraw_amount" style="font-weight:bold;">Amount</label>
-                                            <input type="number" class="form-control" name="amount" id="withdraw_amount" min="<?= $settings['thresh_hold'] ?>" max="<?= max($settings['thresh_hold'], floor($user['balance'])) ?>" value="<?= floor($user['balance']) ?>" autocomplete="off" required>
-                                        </div>
-                        
-                                        <div class="row">
-                                            <style>
-                                                .card-input-element {
-                                                    display: none;
-                                                }
-                        
-                                                .panel-default>.panel-heading {
-                                                    color: #fff;
-                                                    
-                                                    background: rgb(2,0,36);
-                                                background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,9,63,0.5960636085488883) 35%, rgba(0,212,255,1) 100%);
-                                                    border-color: #f82c62;
-                                                }
-                        
-                                                .panel-heading {
-                                                    padding: 10px 15px;
-                                                    border-bottom: 1px solid transparent;
-                                                    border-top-left-radius: 3px;
-                                                    border-top-right-radius: 3px;
-                                                }
-                        
-                                                .panel-body {
-                                                    padding: 15px;
-                                                    background-color: #040916;
-                                                }
-                        
-                                                .card-input {
-                                                    margin: 10px;
-                                                    padding: 00px;
-                                                }
-                        
-                                                .card-input:hover {
-                                                    cursor: pointer;
-                                                }
-                        
-                                                .card-input-element:checked+.card-input {
-                                                    box-shadow: 0 0 5px 5px rgb(255 46 89 / 70%);
-                                                }
-                        
-                                                .progress-bar-warning {
-                                                    background-color: #f0ad4e;
-                                                }
-                        
-                                                .progress-bar-danger {
-                                                    background-color: #d9534f;
-                                                }
-                        
-                                                .progress-bar-success {
-                                                    background-color: #5cb85c;
-                                                }
-                                            </style>
-                                            <div class="col-md-6 col-lg-4 col-sm-12">
-                                                <label style="width: 100%; display: inline-block;margin-bottom: 5px;font-weight: 700;">
-                                                    <input type="radio" name="method" class="method card-input-element" data-value="" data-coincode="" value="" />
-                                                    <div class="panel panel-default card-input" style="background: #006fff;">
-                                                        <div class="panel-heading">
-                                                            -Bitcoin
-                                                            <img class="currency-image" src="assets/img/btc.png" width="30px">
-                                                            <span style="float: right; color: orangered;">Out of Stock</span>
-                                                        </div>
-                                                        <div class="panel-body">
-                                                            <p class="you_get">0.0005</p>
-                                                            <div class="progress" style="border-radius:10px;">
-                                                                <div class="progress-bar progress-bar-danger text-center progress-bar-striped" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width:0%">
-                                                                    0%
+                    <center style="overflow: hidden;">
+                        <!-- PHP code placeholder: <?= $settings['faucet_top_ad'] ?> -->
+                    </center>
+                    
+                    <div class="row px-3">
+                        <div class="col-12">
+                            <div class="welcome-card">
+                                <div>
+                                    <!-- PHP code placeholder -->
+                                    <div class="widget-heading">
+                                        <h4 class="text-center fw-bold pb-3">Withdraw</h4>
+                                        <p class="text-center mb-3"><b>Enter Your Email For Faucetpay/Cwallet Withdrawal</b></p>
+                                    </div>
+                                    <br>
+                                    <div class="widget-content widget-content-area">
+                                        <form action="withdraw/withdraw" method="POST">
+                                            <div class="form-group mb-0">
+                                                <label for="method" class="fw-bold mb-2">Select Method</label>
+                                                <div class="row" style="margin-bottom: unset;">
+                                                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 mb-4">
+                                                        <div class="card shadow px-4 py-2" style="border:1px solid white;">
+                                                            <label class="card-radio-label" style="margin: 0.5rem 1rem 0 1rem;">
+                                                                <input type="radio" name="method" value="" class="method card-radio-input" data-pvalue="" data-coincode="" required>
+                                                                <span style="color: black;font-weight: 700;padding-left: 5px;font-size: 14px;">Method Name - Wallet Name</span>
+                                                                <img class="currency-dashboard" src="assets/img/btc.png" style="width: 30px;height: 30px;" />
+                                                            </label>
+                                                            <div style="margin-bottom: 0.5rem;">
+                                                                <div class="col-12">
+                                                                    <p class="you_get" style="margin: 0.3rem 1rem 1rem 1rem;font-size: 13px;"></p>
+                                                                    <div class="progress" style="border-radius:10px;">
+                                                                        <div class="progress-bar progress-bar-danger text-center progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:100%">
+                                                                            100%
+                                                                        </div>
+                                                                    </div>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                </label>
+                                                    <!-- End of one iteration -->
+                                                    <!-- End of PHP foreach loop -->
+                                                </div>
                                             </div>
-                                        </div>
-                                    </form>
-                                </div>
+                                            
+                                            <div class="form-group mb-4">
+                                              <label for="withdraw_amount">Amount</label>
+                                              <input type="number" class="form-control" name="amount" id="withdraw_amount" min="" max="" value="" autocomplete="off" required="">
+                                            </div>
+                                            <div class="form-group mb-4">
+                                              <label for="wallet">Cwallet Email/Faucetpay Email</label>
+                                              <input type="text" class="form-control" name="wallet" id="wallet" value="" required="">
+                                            </div>
+                                            <input type="hidden" name="" value="">
+                                            <div>
+                                                <center><!-- Captcha placeholder --></center>
+                                                <style>#selectCaptcha{display:none;} .captcha{margin-bottom:3px;}</style>
+                                                <center><!-- Ads placeholder --></center>
+                                            </div>
+                                            <button type="submit" class="btn btn-success w-100 mb-2 mr-2 solid_btn text-white"><i class="fas fa-hand-holding-usd"></i> Withdraw</button>
+                                            <center><!-- Ads placeholder --></center>
+                                        </form>
+                                    </div>
+                               </div>
                             </div>
                         </div>
-                        
                     </div>
+                    
                 </div>
             </div>
 
